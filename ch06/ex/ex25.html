@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>연습문제 25번</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <form method="post" action="form_app.js">
+      <h3>레스토랑 예약하기</h3>
+        <fieldset>
+            <legend>예약자 정보</legend>
+            <label for="name">예약자 : </label>
+            <input type="text" name="name" size="15" id="age"> <br>
+            <label for="phone_number">연락처 :</label>
+            <input type="tel" name="phone_number" size="15" id="age" placeholder="000-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"> <br>
+            <label for="person">예약인원 : </label>
+            <select name="person"  size="1">
+              <option>1명</option> <option>2명</option>
+              <option>3명</option> <option>4명 이상</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>일자 선택 및 시간 선택</legend>
+            <input type="date" name="last_date">
+            <input type="time" name="time_from"><br>
+        </fieldset>
+        <br>
+        <button type="submit">예약</button>
+        <button type="reset">취소</button>
+    </form>
+  </body>
+</html>

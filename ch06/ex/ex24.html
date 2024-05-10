@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>연습문제 24번</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <form method="post" action="form_app.js">
+      <h3>설문조사</h3>
+        <fieldset>
+            <legend>성별과 나이를 입력하세요.</legend>
+            <label for="gender">성별 : </label>
+            <input type="radio" name="gender" value="male"/>남성
+            <input type="radio" name="gender" value="female"/>여성<br>
+            <label for="user_pw">나이 :</label>
+            <input type="text" name="age" size="15" id="age">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>관심 분야를 선택하세요.(1개 이상)</legend>
+            자료유형 :
+            <input type="checkbox" name="d_type" value="digital">디지털 콘텐츠
+            <input type="checkbox" name="d_type" value="web">웹프로그래밍
+            <input type="checkbox" name="d_type" value="data">데이터베이스
+            <input type="checkbox" name="d_type" value="digitalbook">전자출판<br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>다음 문항에 대해 5점 척도로 답하세요.</legend>
+          <label for="user_id">본 세미나의 주제는 만족스러운가?</label>
+          1 <input type="range" min="1" max="5" value="3" /> 5 <br>
+          <label for="user_id">본 세미나의 초청 강사는 만족스러운가?</label>
+          1 <input type="range" min="1" max="5" value="3" /> 5 <br>
+          <label for="user_id">본 세미나의 강의 시간은 적당한가?</label>
+          1 <input type="range" min="1" max="5" value="3" /> 5 <br>
+      </fieldset>
+        <br>
+        <textarea name="comments" rows="5" cols="50" placeholder="의견을 적으세요"></textarea> <br><br>
+        <button type="submit">검색</button>
+        <button type="reset">지우기</button>
+    </form>
+  </body>
+</html>
